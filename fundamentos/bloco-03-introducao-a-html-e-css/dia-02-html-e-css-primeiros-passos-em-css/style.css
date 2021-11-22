@@ -1,0 +1,30 @@
+body{
+    font-size: 16px;
+}
+h1{
+    font-family: sans-serif;
+    font-size: 65px;
+    color: orange;
+}
+p{
+    font-weight: 600;
+    font-size: 3em;
+    line-height: 80px;
+    text-align:center;
+    font-style:italic;
+}
+ol{
+    background-color: blanchedalmond;
+}
+.bg-gray{
+    background-color: gray;
+}
+.bg-yellow{
+    background-color: yellow;
+}
+.bg-red{
+    background-color: red;
+}
+.bg-brown{
+    background-color: brown;
+}
