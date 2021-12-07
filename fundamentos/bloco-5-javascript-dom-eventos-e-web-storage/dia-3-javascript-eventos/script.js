@@ -58,7 +58,7 @@ function createBtnHoliday(btnName) {
 createBtnHoliday("Feriados");
 
 // Exercicio 3
-function changeBgHolidays(btn) {
+function changeBgHolidays() {
   let holidays = document.querySelectorAll(".holiday");
 
   for (const holiday of holidays) {
@@ -70,9 +70,9 @@ function changeBgHolidays(btn) {
   }
 }
 
-let btn = document.getElementById("btn-holiday");
+let btnHoliday = document.getElementById("btn-holiday");
 
-btn.addEventListener("click", changeBgHolidays);
+btnHoliday.addEventListener("click", changeBgHolidays);
 
 // Exercicio 4
 function createBtnFriday(btnName) {
@@ -81,6 +81,35 @@ function createBtnFriday(btnName) {
   btn.innerText = btnName;
   document.querySelector(".buttons-container").appendChild(btn);
 }
-createBtnHoliday("Sexta-feira");
+createBtnFriday("Sexta-feira");
 
 // Exercicio 5
+function changeBgFriday() {
+  let fridays = document.querySelectorAll(".friday");
+  
+  // FIXME: Fazer logica inversa
+  // let count =0;  
+  // if (fridays[0].innerText == 'SEXTOU') {
+  //   // Não esta funcionando dessa forma
+  //   for (const friday of [4, 11, 18, 25]) {
+  //     fridays[count].innerText = friday;
+  //     console.log(fridays[count]);
+  //     console.log(friday);
+  //     count++;
+  //   }
+
+  // }
+
+  // if (fridays[0].innerText != 'SEXTOU') {
+  //   for (const friday of fridays) {
+  //     friday.innerText = 'SEXTOU';
+  //   }
+  // }
+  friday.innerText = 'SEXTOU';
+}
+
+let btnFriday = document.getElementById("btn-friday");
+
+btnFriday.addEventListener("click", changeBgFriday);
+
+// Exercicio 6
