@@ -21,8 +21,8 @@ function createDaysOfTheWeek() {
 
 createDaysOfTheWeek();
 
-// Escreva seu código abaixo.
 
+// Exercicio 1
 function holidayAndFriday() {
   const dezDaysList = [
     29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
@@ -48,6 +48,7 @@ function holidayAndFriday() {
 
 holidayAndFriday();
 
+// Exercicio 2
 function createBtnHoliday(btnName) {
   let btn = document.createElement("button");
   btn.id = "btn-holiday";
@@ -56,6 +57,7 @@ function createBtnHoliday(btnName) {
 }
 createBtnHoliday("Feriados");
 
+// Exercicio 3
 function changeBgHolidays(btn) {
   let holidays = document.querySelectorAll(".holiday");
 
@@ -72,3 +74,13 @@ let btn = document.getElementById("btn-holiday");
 
 btn.addEventListener("click", changeBgHolidays);
 
+// Exercicio 4
+function createBtnFriday(btnName) {
+  let btn = document.createElement("button");
+  btn.id = "btn-friday";
+  btn.innerText = btnName;
+  document.querySelector(".buttons-container").appendChild(btn);
+}
+createBtnHoliday("Sexta-feira");
+
+// Exercicio 5
