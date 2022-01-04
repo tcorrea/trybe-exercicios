@@ -53,4 +53,24 @@ Caso haja algum dado inválido, mostre em uma <div> uma mensagem de erro. Se o e
 Crie um botão Limpar que limpa todos os campos do formulário e a <div> com seu currículo também.
 
 https://app.betrybe.com/course/fundamentals/html-e-css-forms-flexbox-e-responsivo/html-css-forms/156eddd8-90cb-48c5-a01d-d2cd3c7b39cc/exercicios/60bf47c5-e0b5-4d21-aa20-6f287784d6d7/criando-um-formulario-de-curriculo/3e1f7936-404f-4a96-be85-ac206eddb2e8?use_case=next_button
-*/ 
+*/
+
+// Data
+const date = "10/01/1122";
+const splitedDate = date.split("/");
+if (date.length === 10 && splitedDate.length === 3) {
+  if (
+    parseInt(splitedDate[0]) > 0 &&
+    parseInt(splitedDate[0]) <= 31 &&
+    parseInt(splitedDate[1]) > 0 &&
+    parseInt(splitedDate[1]) <= 12 &&
+    parseInt(splitedDate[2]) > 0
+  ) {
+    console.log("Data ok: \n");
+    console.log(date);
+  } else {
+    console.log("Erro: Data invalida 1");
+  }
+} else {
+  console.log("Erro: Data invalida 2");
+}
