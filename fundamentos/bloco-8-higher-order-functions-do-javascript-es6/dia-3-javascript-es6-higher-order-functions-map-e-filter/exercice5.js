@@ -14,5 +14,4 @@ function fantasyOrScienceFictionAuthors(books) {
   }).map((item) => item.author.name).sort();
 }
 
-
 console.log(fantasyOrScienceFictionAuthors(books));
