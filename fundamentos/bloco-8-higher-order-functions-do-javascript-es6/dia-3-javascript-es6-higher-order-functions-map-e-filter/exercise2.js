@@ -1,10 +1,5 @@
 const books = require("./data.js");
 
-let today = new Date();
-let year = today.getFullYear();
-
-// console.log(year);
-
 function nameAndAge(books) {
   return books.map((item) => {
       return {age: item.releaseYear - item.author.birthYear, author: item.author.name};
