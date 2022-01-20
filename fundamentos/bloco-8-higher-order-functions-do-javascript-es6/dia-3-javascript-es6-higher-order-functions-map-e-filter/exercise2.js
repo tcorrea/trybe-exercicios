@@ -2,8 +2,11 @@ const books = require("./data.js");
 
 function nameAndAge(books) {
   return books.map((item) => {
-      return {age: item.releaseYear - item.author.birthYear, author: item.author.name};
-  }).sort((a, b) => a.age - b.age);
+      return {
+        age: item.releaseYear - item.author.birthYear,
+        author: item.author.name,
+      };
+    }).sort((a, b) => a.age - b.age);
 }
 
 console.log(nameAndAge(books));
